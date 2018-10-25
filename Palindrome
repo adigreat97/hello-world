@@ -1,0 +1,13 @@
+int num,l,nom,pal,big=1;
+for(int i=100;i<1000;i++){
+ for(int j=100;j<1000;j++){
+ num=i*j;
+ String rev= new StringBuilder(Integer.toString(num)).reverse().toString();
+ int rev1=Integer.parseInt(rev);
+ if(num==rev1){
+ pal=num;}
+ if(big<pal){
+ big=pal;
+  }}
+ }
+System.out.println(big);
